@@ -1,3 +1,29 @@
 body {
-    background-color: rgb(255, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #FAA81D
+}
+
+h1, h2, h3, h4, h5, h6{
+font-family: 'Couri', Courier, monospace;
+font-size: 40pt;
+}
+
+header{
+    text-align: center;
+}
+
+#hero, footer {
+   color: rgb(254, 254, 254);
+   border: #8EF1FA;
+    background-color: #FA550C;
+    text-align: center;
+    padding: 10px;
+}
+
+#hero img {
+    width: 300px;
+}
+
+#bio {
+    text-align: center;
 }
