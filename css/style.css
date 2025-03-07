@@ -3,21 +3,28 @@ body {
     background-color: #FAA81D
 }
 
-h1, h2, h3, h4, h5, h6{
-font-family: 'Couri', Courier, monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Couri', Courier, monospace;
 }
+
 h1 {
     font-size: 40pt;
 
 }
 
-header{
+header {
     text-align: center;
 }
 
-#hero, footer {
-   color: rgb(254, 254, 254);
-   border: #8EF1FA;
+#hero,
+footer {
+    color: rgb(254, 254, 254);
+    border: #8EF1FA;
     background-color: #FA550C;
     text-align: center;
     padding: 10px;
@@ -29,32 +36,63 @@ header{
     width: 300px;
 }
 
- /*bio Section*/
+/*bio Section*/
 
 #bio {
     text-align: center;
 }
 
- /*Hobbies*/
-#hobbies ul li:nth-child(even){
+/*Hobbies*/
+#hobbies ul li:nth-child(even) {
     color: aliceblue;
 
 }
-#hobbies ul li:nth-child(odd){
+
+#hobbies ul li:nth-child(odd) {
     color: rgb(228, 29, 19);
 }
 
- /*Galery*/
+/*Galery*/
 
- #gallery{
+#gallery {
     text-align: center;
     border: 2px solid rgb(255, 1, 1)
- }
+}
 
- #gallery img {
-max-width: 100%;
+#gallery img {
+    max-width: 100%;
 }
 
 #gallery figure {
     text-align: center;
+}
+
+/* Literature*/
+
+#lit {
+    text-align: center;
+    margin-bottom: 40rem;
+    border: 2px solid #ff5805
+}
+
+#lit div {
+    padding: 2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+#lit div p:first-letter {
+    color: red;
+    float: left;
+    font-size: 3em;
+    line-height: .65 border 4px inset
+}
+
+#lit div p:nth-child(3n+1)::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    color: #3498db;
+    float: left;
+    margin-right: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
