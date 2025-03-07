@@ -5,7 +5,10 @@ body {
 
 h1, h2, h3, h4, h5, h6{
 font-family: 'Couri', Courier, monospace;
-font-size: 40pt;
+}
+h1 {
+    font-size: 40pt;
+
 }
 
 header{
@@ -26,4 +29,12 @@ header{
 
 #bio {
     text-align: center;
+}
+
+#hobbies ul li:nth-child(even){
+    color: aliceblue;
+
+}
+#hobbies ul li:nth-child(odd){
+    color: rgb(228, 29, 19);
 }
