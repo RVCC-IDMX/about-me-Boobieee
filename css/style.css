@@ -23,18 +23,38 @@ header{
     padding: 10px;
 }
 
+/*Hero Section*/
+
 #hero img {
     width: 300px;
 }
+
+ /*bio Section*/
 
 #bio {
     text-align: center;
 }
 
+ /*Hobbies*/
 #hobbies ul li:nth-child(even){
     color: aliceblue;
 
 }
 #hobbies ul li:nth-child(odd){
     color: rgb(228, 29, 19);
+}
+
+ /*Galery*/
+
+ #gallery{
+    text-align: center;
+    border: 2px solid rgb(255, 1, 1)
+ }
+
+ #gallery img {
+max-width: 100%;
+}
+
+#gallery figure {
+    text-align: center;
 }
