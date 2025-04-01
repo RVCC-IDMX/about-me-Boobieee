@@ -40,18 +40,35 @@ footer {
 }
 
 /*Hobbies*/
-#hobbies ul li:nth-child(even) {
-    color: aliceblue;
+#hobbies {
+    text-align: center;
+}
 
+
+#hobbies ul li:nth-child(even) {
+    text-align: center;
+    color: aliceblue;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    margin-bottom: 5px;
 }
 
 #hobbies ul li:nth-child(odd) {
     color: rgb(228, 29, 19);
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    margin-bottom: 5px;
 }
 
 /*Galery*/
 
 #gallery {
+    color: #000000;
     text-align: center;
     border: 2px solid rgb(255, 1, 1)
 }
@@ -69,7 +86,7 @@ footer {
 
 #lit {
     text-align: center;
-    margin-bottom: 40rem;
+    margin-bottom: 10rem;
     border: 2px solid #ff5805
 }
 
@@ -93,4 +110,62 @@ footer {
     float: left;
     margin-right: 10px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#lit div p:first-child(3n+1)::first-letter {
+    background-image: radial-gradient(white, transparent);
+    float: left;
+    font-size: 3em;
+    padding: 0.25em;
+    margin-right: 0.25em;
+    line-height: 0.65;
+    border: 4px outset #000;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
+}
+
+/*tablet size*/
+@media screen and (min-width: 60em) {
+    figure {
+        display: grid;
+        grid-template-columns: 26rem 1fr;
+    }
+
+    figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+}
+
+figure img {
+    width: 100%;
+}
+
+#lit div {
+    max-width: 100%;
+
+}
+
+/*large screen size*/
+
+@media screen and (min-width:100em) {
+
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    hr {
+        display: none;
+    }
+
+
+#gallery h2 {
+    grid-column:  1/-1;
+}
+
 }
