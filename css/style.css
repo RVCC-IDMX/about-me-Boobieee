@@ -3,12 +3,8 @@ body {
     background-color: #FAA81D
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+h4 {
     font-family: 'Couri', Courier, monospace;
 }
 
@@ -61,6 +57,7 @@ footer {
 }
 
 #gallery img {
+    width: 500px;
     max-width: 100%;
 }
 
