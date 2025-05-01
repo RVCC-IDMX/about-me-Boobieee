@@ -72,12 +72,26 @@ footer {
     text-align: center;
     border: 2px solid rgb(24, 199, 24)
 }
+.project img:hover {
+    /* gently scale up */
+    transform: scale(1.05);
+    /* add a soft lift shadow */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  }
 
 #gallery img {
-    width: 500px;
-    max-width: 100%;
+    width: 480px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 100px auto;
+    border: 5px solid #233d4d;
+    border-radius: 10px;
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+  }
     
-}
 .same-height {
     height: 150px;
     width: auto;
@@ -135,6 +149,8 @@ footer {
     text-align: center;
     color: #ff0000;
 }
+
+
 
 /*tablet size*/
 @media screen and (min-width: 60em) {
