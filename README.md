@@ -11,3 +11,7 @@ Grey, green and purple work together really well because each color plays a clea
 A Citations section where you list the sources of any content that you did not create yourself.
 
 A section on what License you wish to release your content (or if you reserve copyrights).
+
+I made the images have hover effects.
+
+I made a mini blog more about me and what im doing.

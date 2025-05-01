@@ -67,17 +67,18 @@ footer {
 
 /*Gallery*/
 
-#gallery {
-    color: #000000;
-    text-align: center;
-    border: 2px solid rgb(24, 199, 24)
+#gallery {             
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px;           /* sets every row to exactly 200px tall */
+  gap: 1rem;
+  text-align: center;
+  font-size: large;
 }
-.project img:hover {
-    /* gently scale up */
-    transform: scale(1.05);
-    /* add a soft lift shadow */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-  }
+
+#gallery figcaption{
+    font-size: larger;
+}
+
 
 #gallery img {
     width: 480px;
@@ -85,17 +86,27 @@ footer {
     object-fit: cover;
     display: block;
     margin: 100px auto;
-    border: 5px solid #233d4d;
+    border: 5px solid #444141;
     border-radius: 10px;
     padding: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
    
   }
-    
-.same-height {
-    height: 150px;
-    width: auto;
+  #gallery img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
   }
+  
+    
+  .same-height {
+    height: 200px;     /* desired uniform height */
+    width: auto;       /* let the width adjust to keep aspect ratio */
+    object-fit: cover; /* ensures the image fills the box nicely */
+    display: block;    /* remove inline spacing quirks */
+    margin: 0 auto;    /* center it if needed */
+  }
+  
 
 #gallery figure {
     text-align: center;
