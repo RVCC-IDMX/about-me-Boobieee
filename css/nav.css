@@ -1,7 +1,13 @@
+/* make scrolling smooth */
 html {
     scroll-behavior: smooth;
 }
 
+
+/* 
+ get rid of padding & sizing on body so
+ header is at top
+*/
 body {
     box-sizing: border-box;
     padding: 0%;
@@ -9,11 +15,12 @@ body {
 }
 
 
+/* add some padding back to rest of page */
+
 main {
     padding: 2vw;
 }
-
-/*navbar */
+/* navbar */
 .navbar {
     background-color: #333;
     color: white;
@@ -23,6 +30,7 @@ main {
     margin-bottom: 1rem;
     
 }
+
 
 /* logo */
 .logo {
@@ -40,6 +48,8 @@ main {
     font-size: 2em;
     margin: 0%;
 }
+
+
 /* navigation list */
 
 .navbar-links li {
@@ -51,8 +61,10 @@ main {
 padding: 0%;
 }
 
-/* Style all a tags in header and then on hover */
-
+/*  
+ style all a tags in header 
+ and then on hover
+*/
 .navbar-links a {
     color: whitesmoke;
     background-color: #333;
@@ -64,25 +76,31 @@ padding: 0%;
 .navbar-links a:focus {
     filter: invert(1);
 }
-/* medi query */
 
+
+
+
+/* 
+media query for non-mobile nav bar
+min-width set to width of nav elements 
+such that no text wraps 
+*/
 @media screen {
+.logo {
+    padding-top: 0%;
+}
+.navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+}   
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+.navbar-links {
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-    .logo {
-        padding-top: 0%;
-    }
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 1em;
-    }   
-    .navbar ul {
-        display: flex;
-        flex-direction: row;
-    }
-    .navbar-links {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
 }

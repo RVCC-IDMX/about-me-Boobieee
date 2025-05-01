@@ -76,7 +76,12 @@ footer {
 #gallery img {
     width: 500px;
     max-width: 100%;
+    
 }
+.same-height {
+    height: 150px;
+    width: auto;
+  }
 
 #gallery figure {
     text-align: center;
@@ -126,6 +131,11 @@ footer {
     border-bottom-right-radius: 0.2em;
 }
 
+#Contact {
+    text-align: center;
+    color: #ff0000;
+}
+
 /*tablet size*/
 @media screen and (min-width: 60em) {
     figure {
@@ -169,3 +179,4 @@ figure img {
     }
 
 }
+
