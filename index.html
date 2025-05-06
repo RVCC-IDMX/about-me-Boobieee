@@ -194,65 +194,39 @@
   </main>
   <section id="Contact">
     <h2>Contact Anthonie Jones</h2>
-    <form action="#" method="post">
-      <fieldset>
-        <legend>Contact Form</legend>
-
-        <!-- Name input (required) -->
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required value="John Doe">
+    <form action="#" method="post" style="max-width: 600px; margin: auto; background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      <fieldset style="border: none;">
+        <legend style="font-weight: bold; font-size: 1.2rem; margin-bottom: 10px;">Get in Touch</legend>
+  
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+  
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+  
+        <label for="phone">Phone (optional)</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+  
+        <label for="phone-type">Phone Type</label>
+        <select id="phone-type" name="phone-type" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+          <option value="">Select type</option>
+          <option value="mobile">Mobile</option>
+          <option value="home">Home</option>
+          <option value="work">Work</option>
+        </select>
+  
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Type your message here..." style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+  
+        <p>Would you like a followup?</p>
+        <div style="margin-bottom: 15px;">
+          <input type="radio" id="followup-yes" name="followup" value="yes">
+          <label for="followup-yes">Yes</label>
+          <input type="radio" id="followup-no" name="followup" value="no" style="margin-left: 15px;">
+          <label for="followup-no">No</label>
         </div>
-
-        <!-- Email input (required) -->
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-
-        <!-- Phone input (optional) -->
-        <div>
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone">
-        </div>
-
-        <!-- Phone type select (optional) -->
-        <div>
-          <label for="phone-type">Phone Type:</label>
-          <select id="phone-type" name="phone-type">
-            <option value="">Select type</option>
-            <option value="mobile">Mobile</option>
-            <option value="home">Home</option>
-            <option value="work">Work</option>
-          </select>
-        </div>
-
-        <!-- Message textarea -->
-        <div>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-        </div>
-
-        <!-- Followup radio buttons within an unordered list -->
-        <div>
-          <p>Would you like a followup?</p>
-          <ul>
-            <li>
-              <input type="radio" id="followup-yes" name="followup" value="yes">
-              <label for="followup-yes">Yes</label>
-            </li>
-            <li>
-              <input type="radio" id="followup-no" name="followup" value="no">
-              <label for="followup-no">No</label>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Submit button -->
-        <div>
-          <button type="submit">Submit</button>
-        </div>
-
+  
+        <button type="submit" style="width: 100%; padding: 12px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
       </fieldset>
     </form>
   </section>
